@@ -12,14 +12,19 @@ class BirthdayAudioManager {
     this.isUsingSynth = false;
     this.synthLoopTimer = null;
     this.listeners = new Set();
+    this.activeNodes = new Set();
+    this.playToken = 0;
+    this.allowFallback = true;
   }
 
-  init(musicSrc) {
+  init(musicSrc, allowFallback = true) {
+    this.allowFallback = allowFallback;
+    if (!musicSrc) { this.isUsingSynth = allowFallback; return; }
     if (this.audioElement) return;
 
     this.audioElement = new Audio(musicSrc);
     this.audioElement.loop = true;
-    this.audioElement.preload = "auto";
+    this.audioElement.preload = "none";
 
     // Khi bài nhạc kết thúc hoặc có sự kiện
     this.audioElement.addEventListener("play", () => {
@@ -32,8 +37,8 @@ class BirthdayAudioManager {
       this.notifyListeners();
     });
 
-    this.audioElement.addEventListener("error", (e) => {
-      console.warn("Không thể tải file MP3, tự động chuyển sang giai điệu Music Box tích hợp sẵn 🎵", e);
+    this.audioElement.addEventListener("error", () => {
+      // Missing or unavailable media is handled by play() with the built-in fallback.
       this.isUsingSynth = true;
     });
   }
@@ -41,6 +46,7 @@ class BirthdayAudioManager {
   // Đăng ký listener để cập nhật state trong React
   subscribe(callback) {
     this.listeners.add(callback);
+    callback(this.isPlaying);
     return () => this.listeners.delete(callback);
   }
 
@@ -50,18 +56,24 @@ class BirthdayAudioManager {
 
   async play() {
     if (this.isPlaying) return;
+    const token = ++this.playToken;
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (AudioCtx && !this.audioContext) this.audioContext = new AudioCtx();
+    if (this.audioContext?.state === "suspended") { void this.audioContext.resume().catch(() => {}); }
 
     // Ưu tiên phát file MP3 nếu có
     if (this.audioElement && !this.isUsingSynth) {
       try {
         await this.audioElement.play();
+        if (token !== this.playToken) { this.audioElement.pause(); return; }
         this.isPlaying = true;
         this.notifyListeners();
         return;
-      } catch (err) {
-        console.warn("Trình duyệt chặn autoplay hoặc file MP3 lỗi:", err.message);
+      } catch {
+        if (token !== this.playToken || !this.allowFallback) return;
+        this.isUsingSynth = true;
         // Fallback sang synth
-        this.startMusicBoxSynth();
+        if (this.allowFallback) this.startMusicBoxSynth();
         return;
       }
     }
@@ -71,6 +83,9 @@ class BirthdayAudioManager {
   }
 
   pause() {
+    ++this.playToken;
+    for (const osc of this.activeNodes) { try { osc.stop(); } catch { /* already stopped */ } osc.disconnect(); }
+    this.activeNodes.clear();
     if (this.audioElement) {
       this.audioElement.pause();
     }
@@ -99,7 +114,7 @@ class BirthdayAudioManager {
       }
 
       if (this.audioContext.state === "suspended") {
-        this.audioContext.resume();
+        void this.audioContext.resume().catch(() => { this.isPlaying = false; this.notifyListeners(); });
       }
 
       this.isPlaying = true;
@@ -178,6 +193,8 @@ class BirthdayAudioManager {
     gain.gain.exponentialRampToValueAtTime(0.18, startTime + 0.04);
     gain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
 
+    this.activeNodes.add(osc);
+    osc.onended = () => { this.activeNodes.delete(osc); osc.disconnect(); gain.disconnect(); };
     osc.connect(gain);
     gain.connect(this.audioContext.destination);
 

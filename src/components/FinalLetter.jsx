@@ -1,4 +1,3 @@
-import React from "react";
 import { RotateCcw } from "lucide-react";
 import { birthdayConfig } from "../data/birthdayConfig";
 
@@ -20,6 +19,7 @@ export const FinalLetter = ({ onReplay }) => {
           {finalLetter.letterTitle}
         </h3>
 
+        <img className="letter-tea" src="/assets/crisp/icons/tea.svg" alt="" />
         {/* Nội dung bức thư */}
         <div className="pixel-letter-body">
           {finalLetter.body.map((p, index) => (

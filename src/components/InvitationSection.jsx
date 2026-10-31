@@ -1,73 +1,16 @@
-import React from "react";
-import { Volume2, Sparkles } from "lucide-react";
+import { ArrowRight, Volume2 } from "lucide-react";
 import { birthdayConfig } from "../data/birthdayConfig";
-
 export const InvitationSection = ({ onOpenGift }) => {
-  const { invitation, recipient } = birthdayConfig;
-
-  return (
-    <div className="pixel-invitation-container">
-      {/* Huy hiệu Pixel trên cùng */}
-      <div className="pixel-top-badge">
-        <span className="pixel-badge">
-          <Sparkles size={13} />
-          {recipient.ageBadge || "SPECIAL DAY • 21.10"}
-        </span>
-      </div>
-
-      {/* Tiêu đề chính */}
-      <h1 className="pixel-invitation-title">
-        {invitation.mainTitle}
-      </h1>
-
-      {/* Khung đối thoại RPG Pixel mộc mạc */}
-      <div className="pixel-dialog-box">
-        <div className="dialog-corner dc-tl" />
-        <div className="dialog-corner dc-tr" />
-        <div className="dialog-corner dc-bl" />
-        <div className="dialog-corner dc-br" />
-        
-        <p className="pixel-dialog-text">
-          {invitation.message}
-        </p>
-      </div>
-
-      {/* Rương quà thủ công gỗ mộc & ruy băng vải hoa dại */}
-      <div
-        className="pixel-giftbox-wrapper"
-        onClick={onOpenGift}
-        role="button"
-        tabIndex={0}
-        aria-label="Chạm để mở hộp quà Pixel"
-      >
-        <img
-          src="/assets/ui-giftbox.svg"
-          alt="Handcrafted Wooden Gift Box"
-          className="pixel-giftbox-asset"
-          loading="eager"
-        />
-
-        {/* Ngôi sao Pixel nhẹ nhàng bay quanh */}
-        <div className="pixel-spark-decor ps-1">✦</div>
-        <div className="pixel-spark-decor ps-2">★</div>
-        <div className="pixel-spark-decor ps-3">✦</div>
-      </div>
-
-      {/* Nút bấm mở quà phong cách Retro mộc mạc */}
-      <button
-        className="btn-pixel-primary"
-        onClick={onOpenGift}
-        id="btn-open-gift"
-      >
-        <span>🎁</span>
-        <span>{invitation.openButtonText}</span>
-      </button>
-
-      {/* Gợi ý âm thanh kiểu Retro HUD */}
-      <div className="pixel-sound-hint">
-        <Volume2 size={15} />
-        <span>{invitation.hintText}</span>
-      </div>
-    </div>
-  );
+ const { invitation, recipient } = birthdayConfig;
+ return <section className="invitation-layout" aria-labelledby="invitation-title">
+  <div className="invitation-copy">
+   <span className="little-label"><img src="/assets/crisp/icons/heart.svg" alt="" />{recipient.ageBadge}</span>
+   <p className="invitation-kicker">{invitation.subTitle}</p><h1 id="invitation-title">{invitation.mainTitle}</h1>
+   <div className="invitation-note crisp-dialog"><p>{invitation.message}</p></div>
+   <div className="invitation-actions"><button className="btn-pixel-primary" onClick={onOpenGift} id="btn-open-gift"><span>{invitation.openButtonText}</span><ArrowRight size={19} aria-hidden="true" /></button><p className="sound-hint"><Volume2 size={16} aria-hidden="true" />{invitation.hintText}</p></div>
+  </div>
+  <button className="gift-scene" onClick={onOpenGift} aria-label="Chạm để mở món quà sinh nhật">
+   <span className="scene-topline">bưu kiện yêu thương</span><span className="scene-frame"><img className="scene-cat" src="/assets/crisp/icons/cat.svg" alt="Chú mèo nhỏ mang lời chúc sinh nhật" fetchPriority="high" /><img className="scene-heart" src="/assets/crisp/icons/heart.svg" alt="" /><img className="scene-star" src="/assets/crisp/icons/star.svg" alt="" /><img className="scene-strawberry" src="/assets/crisp/icons/strawberry.svg" alt="" /><img className="scene-flower" src="/assets/crisp/icons/flower.svg" alt="" /></span><span className="scene-recipient">gửi {recipient.nickname}, với thật nhiều thương mến</span><span className="scene-touch">chạm nhẹ để mở nhé</span>
+  </button>
+ </section>;
 };

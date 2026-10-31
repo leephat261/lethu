@@ -16,7 +16,7 @@ export const birthdayConfig = {
 
   // 2. NHẠC NỀN
   music: {
-    src: "/music/birthday-song.mp3",
+    src: "", // Built-in music box. Set to "/music/birthday-song.mp3" after adding a licensed MP3.
     title: "Paris in the Rain • Lofi Melodic",
     artist: "Happy Birthday Fen",
     useBuiltInSynthFallback: true,
@@ -49,6 +49,7 @@ export const birthdayConfig = {
     {
       id: 1,
       image: "/images/img1.jpg",
+      thumbnail: "/images/memories/img1-thumb.webp",
       title: "Nụ cười rạng rỡ",
       caption: "Mỗi lần fen cười là cả ngày bừng sáng như nắng sớm ✨",
       tag: "Memory #01",
@@ -57,6 +58,7 @@ export const birthdayConfig = {
     {
       id: 2,
       image: "/images/img2.jpg",
+      thumbnail: "/images/memories/img2-thumb.webp",
       title: "Chiếc bánh ngọt ngào",
       caption: "Thêm một tuổi mới với thật nhiều niềm vui và bất ngờ 🍰",
       tag: "Memory #02",
@@ -65,6 +67,7 @@ export const birthdayConfig = {
     {
       id: 3,
       image: "/images/img3.jpg",
+      thumbnail: "/images/memories/img3-thumb.webp",
       title: "Đồng hành cùng nhau",
       caption: "Giống như cô bạn cùng chú cún nhỏ giữa cánh đồng hoa vậy đó 🐾",
       tag: "Memory #03",
@@ -73,6 +76,7 @@ export const birthdayConfig = {
     {
       id: 4,
       image: "/images/img4.jpg",
+      thumbnail: "/images/memories/img4-thumb.webp",
       title: "Cánh đồng hoa nở rộ",
       caption: "Chúc fen luôn tỏa sáng và tươi tắn như những đóa hoa mùa hạ 🌸",
       tag: "Memory #04",
@@ -81,6 +85,7 @@ export const birthdayConfig = {
     {
       id: 5,
       image: "/images/img5.jpg",
+      thumbnail: "/images/memories/img5-thumb.webp",
       title: "Những buổi hẹn cà phê",
       caption: "Cùng nhau ngồi tâm sự chuyện trên trời dưới đất không biết chán ☕",
       tag: "Memory #05",
@@ -89,6 +94,7 @@ export const birthdayConfig = {
     {
       id: 6,
       image: "/images/img6.jpg",
+      thumbnail: "/images/memories/img6-thumb.webp",
       title: "Dưới bầu trời xanh",
       caption: "Bầu trời rộng lớn phía trước đang chờ fen khám phá thật nhiều điều kỳ diệu ☁️",
       tag: "Memory #06",

@@ -1,5 +1,4 @@
-import React from "react";
-import { Sparkles, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { birthdayConfig } from "../data/birthdayConfig";
 
 export const BirthdayWish = () => {
@@ -10,7 +9,7 @@ export const BirthdayWish = () => {
       {/* Tiêu đề phần */}
       <div className="section-header">
         <span className="pixel-badge">
-          <Sparkles size={13} />
+          <img src="/assets/crisp/icons/star.svg" alt="" />
           {recipient.zodiac || "THIÊN BÌNH ♎"}
         </span>
         <h2 className="section-title">
@@ -27,12 +26,7 @@ export const BirthdayWish = () => {
         <div className="pixel-tape" />
 
         {/* Con tem bưu điện Pixel Stamp */}
-        <div className="pixel-stamp" aria-hidden="true">
-          <div className="pixel-stamp-inner">
-            <span className="stamp-icon">🐾</span>
-            <span className="stamp-text">FEN</span>
-          </div>
-        </div>
+        <img className="wish-flower" src="/assets/crisp/icons/flower.svg" alt="" />
 
         {/* Badge ngày sinh nhật */}
         <div className="pixel-date-badge">

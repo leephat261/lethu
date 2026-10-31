@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Camera, Sun, Coffee, Cloud, Compass } from "lucide-react";
+import { useState } from "react";
+import { Camera } from "lucide-react";
 import { birthdayConfig } from "../data/birthdayConfig";
 
 // Các thẻ minh họa 2D Pixel Nature cho từng placeholder
@@ -67,7 +67,7 @@ export const ScrapbookGallery = ({ onSelectPhoto }) => {
           Kỷ Niệm Của Chúng Mình 📸
         </h2>
         <p className="section-subtitle">
-          Chạm vào từng khung ảnh pixel để xem ảnh rõ nét nha
+          Chạm vào từng khung ảnh để xem ảnh rõ nét nha
         </p>
       </div>
 
@@ -80,6 +80,7 @@ export const ScrapbookGallery = ({ onSelectPhoto }) => {
             <div
               key={item.id}
               className="pixel-polaroid-frame"
+              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelectPhoto(index); } }}
               style={{
                 transform: `rotate(${item.rotation || "0deg"})`,
               }}
@@ -95,18 +96,20 @@ export const ScrapbookGallery = ({ onSelectPhoto }) => {
               <div className="pixel-photo-window">
                 {!isFailed ? (
                   <img
-                    src={item.image}
+                    src={item.thumbnail || item.image}
                     alt={item.title}
                     className="pixel-real-photo"
                     loading="lazy"
+                    decoding="async"
+                    width="480" height="600"
                     onError={() => handleImageError(item.id)}
                   />
                 ) : (
                   <div
                     className="pixel-nature-placeholder"
-                    style={{ background: theme.bg }}
+                    
                   >
-                    <span className="pixel-theme-icon">{theme.icon}</span>
+                    <img className="pixel-theme-icon" src="/assets/crisp/icons/flower.svg" alt="" />
                     <div className="pixel-placeholder-name">{item.title}</div>
                     <div className="pixel-placeholder-tag">{theme.badge}</div>
                   </div>

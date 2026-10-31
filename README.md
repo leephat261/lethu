@@ -1,3 +1,17 @@
+# Crisp Cute birthday card — current version
+
+Crisp Cute Free Sampler (Strawberry Milk) has been applied to this original project. Personal greetings and all six original photos are retained.
+
+- Development preview: `npm run dev -- --host 127.0.0.1 --port 5174`
+- Build: `npm run build`; checks: `npm run lint`
+- Design and validation notes: [REDESIGN_NOTES.md](REDESIGN_NOTES.md)
+- Asset sources and licences: [ASSET_CREDITS.md](ASSET_CREDITS.md)
+- Open `girlproject-crisp.code-workspace` in VS Code.
+
+The previous documentation below is retained for reference. Pixel-art descriptions and old size/load claims below predate this redesign.
+
+---
+
 # 🌻 Happy Birthday Website — 2D Pixel Art Nature Edition 🎮☁️
 
 > Website chúc mừng sinh nhật tương tác cao cấp phong cách **2D Pixel Art, thiên nhiên mùa hè retro & pastel đa sắc**, lấy cảm hứng từ trang web [forourgirl.vercel.app](https://forourgirl.vercel.app/) nhưng được nâng cấp toàn diện về mặt thẩm mỹ, chiều sâu thị giác và trải nghiệm cảm xúc.

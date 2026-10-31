@@ -4,10 +4,12 @@ import confetti from "canvas-confetti";
  * Hiệu ứng pháo hoa giấy Confetti với bảng màu Thiên nhiên đa sắc (Xanh trời, Vàng nắng, Xanh lá, Trắng mây & Hồng hoa dại)
  */
 export const triggerGiftUnwrapConfetti = () => {
-  const count = 180;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const count = 85;
   const defaults = {
     origin: { y: 0.68 },
-    colors: ["#38bdf8", "#60a5fa", "#facc15", "#fde047", "#4ade80", "#f472b6", "#ffffff"],
+    disableForReducedMotion: true,
+    colors: ["#e7a6ba", "#c0d2b2", "#efd19a", "#f4ced9", "#fffaf4"],
   };
 
   function fire(particleRatio, opts) {
@@ -55,19 +57,22 @@ export const triggerGiftUnwrapConfetti = () => {
  * Hiệu ứng pháo sao nhẹ nhàng khi thổi tắt nến
  */
 export const triggerWishBlownConfetti = () => {
-  const end = Date.now() + 1400;
-  const colors = ["#fde047", "#60a5fa", "#4ade80", "#ffffff", "#f472b6"];
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const end = Date.now() + 850;
+  const colors = ["#e7a6ba", "#c0d2b2", "#efd19a", "#fffaf4"];
 
   (function frame() {
     confetti({
-      particleCount: 3,
+      particleCount: 2,
+      disableForReducedMotion: true,
       angle: 60,
       spread: 55,
       origin: { x: 0 },
       colors: colors,
     });
     confetti({
-      particleCount: 3,
+      particleCount: 2,
+      disableForReducedMotion: true,
       angle: 120,
       spread: 55,
       origin: { x: 1 },
