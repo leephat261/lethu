@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 180" width="576" height="180" shape-rendering="crispEdges">
+  <!-- =========================================================================
+       PHƯƠNG ÁN 1: SUMMER PIXEL ART BACKGROUND — LAYER 4: MEADOW & WILDFLOWERS
+       Resolution: 576 x 180 px | CraftPix Lush Summer Meadow & Wildflower Hills
+       ========================================================================= -->
+
+  <!-- 1. LỚP ĐỒI CỎ XA PHÍA SAU (DISTANT ROLLING HILL WITH TREE SILHOUETTES) -->
+  <g id="distant-hill-layer">
+    <!-- Đường đồi xa xanh sẫm -->
+    <path d="M0,64 Q140,32 300,52 T576,38 L576,180 L0,180 Z" fill="#2b5239" />
+    
+    <!-- Các rặng cây pixel nhỏ trên đỉnh đồi xa (Distant Pixel Tree Silhouettes) -->
+    <g fill="#21402d">
+      <!-- Cụm cây 1 -->
+      <rect x="52" y="38" width="10" height="14" />
+      <rect x="54" y="32" width="6" height="6" />
+      <rect x="56" y="52" width="2" height="4" fill="#3a2e26" />
+      <rect x="66" y="42" width="12" height="12" />
+      <rect x="68" y="36" width="8" height="6" />
+      <!-- Cụm cây 2 -->
+      <rect x="230" y="44" width="14" height="16" />
+      <rect x="233" y="36" width="8" height="8" />
+      <rect x="248" y="46" width="10" height="12" />
+      <!-- Cụm cây 3 -->
+      <rect x="410" y="32" width="14" height="16" />
+      <rect x="413" y="24" width="8" height="8" />
+      <rect x="428" y="36" width="12" height="12" />
+    </g>
+  </g>
+
+  <!-- 2. LỚP ĐỒI CỎ TRUNG CẢNH (MIDGROUND MEADOW WITH SUNLIGHT SLOPES) -->
+  <g id="midground-meadow">
+    <!-- Mặt cỏ đón nắng hè trung gian -->
+    <path d="M0,52 Q160,18 340,42 T576,26 L576,180 L0,180 Z" fill="#3d754d" />
+    <!-- Vệt nắng hè vàng trên triền đồi cỏ -->
+    <path d="M0,54 Q140,24 280,34 L280,48 Q140,42 0,72 Z" fill="#529463" opacity="0.85" />
+    <path d="M360,38 Q460,24 576,28 L576,44 Q470,38 360,54 Z" fill="#529463" opacity="0.85" />
+  </g>
+
+  <!-- 3. HÀNG RÀO GỖ ĐỒNG QUÊ HÈ (RUSTIC COUNTRY WOODEN FENCE) -->
+  <g id="country-fence" transform="translate(320, 18)">
+    <!-- Cọc gỗ 1 -->
+    <rect x="0" y="10" width="5" height="26" fill="#5c4737" />
+    <rect x="0" y="8" width="5" height="2" fill="#78614e" />
+    <!-- Cọc gỗ 2 -->
+    <rect x="36" y="14" width="5" height="25" fill="#5c4737" />
+    <rect x="36" y="12" width="5" height="2" fill="#78614e" />
+    <!-- Cọc gỗ 3 -->
+    <rect x="72" y="18" width="5" height="24" fill="#5c4737" />
+    <rect x="72" y="16" width="5" height="2" fill="#78614e" />
+    <!-- Cọc gỗ 4 -->
+    <rect x="108" y="22" width="5" height="23" fill="#5c4737" />
+    <rect x="108" y="20" width="5" height="2" fill="#78614e" />
+
+    <!-- Thanh ngang 1 -->
+    <rect x="-4" y="16" width="124" height="3" fill="#4a3729" />
+    <rect x="-4" y="15" width="124" height="1" fill="#78614e" />
+    <!-- Thanh ngang 2 -->
+    <rect x="-4" y="24" width="124" height="3" fill="#4a3729" />
+    <rect x="-4" y="23" width="124" height="1" fill="#78614e" />
+
+    <!-- Chú chim nhỏ đậu trên cọc gỗ số 2 (Little Pixel Bird) -->
+    <g transform="translate(36, 4)">
+      <rect x="1" y="2" width="4" height="4" fill="#ffffff" />
+      <rect x="5" y="3" width="2" height="1" fill="#f0cb69" /> <!-- Mỏ vàng -->
+      <rect x="2" y="3" width="1" height="1" fill="#223243" /> <!-- Mắt -->
+      <rect x="0" y="4" width="2" height="3" fill="#789cc0" /> <!-- Cánh xanh hè -->
+      <rect x="2" y="6" width="1" height="2" fill="#f0cb69" /> <!-- Chân -->
+    </g>
+  </g>
+
+  <!-- BIỂN GỖ CHÚC MỪNG MỘC MẠC (WOODEN MILESTONE SIGN "FOR FEN 21.10") -->
+  <g id="milestone-sign" transform="translate(110, 36)">
+    <!-- Cọc biển gỗ -->
+    <rect x="8" y="10" width="4" height="24" fill="#5c4737" />
+    <!-- Bảng gỗ hình mũi tên -->
+    <rect x="0" y="4" width="36" height="12" fill="#7a624f" />
+    <rect x="0" y="3" width="36" height="1" fill="#9e8571" />
+    <rect x="0" y="16" width="36" height="1" fill="#423226" />
+    <!-- Chữ Pixel nhỏ 21.10 -->
+    <rect x="4" y="7" width="2" height="6" fill="#fefdf7" />
+    <rect x="8" y="7" width="2" height="6" fill="#fefdf7" />
+    <rect x="12" y="10" width="2" height="2" fill="#f0cb69" />
+    <rect x="16" y="7" width="4" height="6" fill="#fefdf7" />
+    <rect x="22" y="7" width="4" height="6" fill="#fefdf7" />
+    <!-- Nơ hoa phớt hồng trên biển gỗ -->
+    <rect x="28" y="5" width="4" height="4" fill="#ea7692" />
+  </g>
+
+  <!-- 4. LỚP ĐỒI CỎ TIỀN CẢNH CHÍNH (FOREGROUND VIBRANT LUSH HILL) -->
+  <g id="foreground-lush-hill">
+    <!-- Đồi chính uốn lượn phong cách CraftPix -->
+    <path d="M0,42 Q200,8 420,32 T576,18 L576,180 L0,180 Z" fill="#468856" />
+
+    <!-- Thảm cỏ đón ánh nắng hè vàng rực rỡ (Sunlit Crest) -->
+    <path d="M0,44 Q160,12 360,26 L360,38 Q180,32 0,62 Z" fill="#65ab75" />
+    <path d="M0,45 Q120,16 260,24 L260,32 Q130,28 0,54 Z" fill="#88cb95" />
+    <path d="M0,46 Q80,20 180,24 L180,28 Q90,26 0,48 Z" fill="#aee6b9" />
+
+    <!-- Bụi cỏ răng cưa pixel đung đưa (Pixel Grass Tufts) -->
+    <g fill="#aee6b9">
+      <rect x="34" y="38" width="2" height="4" />
+      <rect x="36" y="36" width="2" height="6" />
+      <rect x="38" y="39" width="2" height="3" />
+
+      <rect x="84" y="30" width="2" height="4" />
+      <rect x="86" y="27" width="2" height="7" />
+      <rect x="88" y="29" width="2" height="5" />
+
+      <rect x="164" y="24" width="2" height="5" />
+      <rect x="166" y="22" width="2" height="7" />
+      <rect x="168" y="25" width="2" height="4" />
+
+      <rect x="260" y="25" width="2" height="5" />
+      <rect x="262" y="22" width="2" height="8" />
+      <rect x="264" y="26" width="2" height="4" />
+
+      <rect x="380" y="29" width="2" height="5" />
+      <rect x="382" y="26" width="2" height="8" />
+
+      <rect x="490" y="22" width="2" height="5" />
+      <rect x="492" y="19" width="2" height="8" />
+      <rect x="494" y="23" width="2" height="4" />
+    </g>
+  </g>
+
+  <!-- 5. CHÚ CÚN SHIBA NHỎ TẬN HƯỞNG GIÓ HÈ (SUMMER SHIBA COMPANION) -->
+  <g id="meadow-shiba" transform="translate(210, 20)">
+    <!-- Thân cún pixel chàm/đen sẫm mộc mạc -->
+    <rect x="6" y="8" width="12" height="11" fill="#1e293b" />
+    <!-- 4 chân -->
+    <rect x="6" y="19" width="2" height="6" fill="#1e293b" />
+    <rect x="9" y="19" width="2" height="6" fill="#1e293b" />
+    <rect x="13" y="19" width="2" height="6" fill="#1e293b" />
+    <rect x="16" y="19" width="2" height="6" fill="#1e293b" />
+    <!-- Bàn chân màu trắng kem -->
+    <rect x="6" y="24" width="2" height="1" fill="#fdfaf3" />
+    <rect x="9" y="24" width="2" height="1" fill="#fdfaf3" />
+    <rect x="13" y="24" width="2" height="1" fill="#fdfaf3" />
+    <rect x="16" y="24" width="2" height="1" fill="#fdfaf3" />
+    <!-- Đuôi cuộn cong vui vẻ -->
+    <rect x="3" y="6" width="3" height="4" fill="#1e293b" />
+    <rect x="2" y="5" width="2" height="3" fill="#1e293b" />
+    <rect x="2" y="4" width="2" height="1" fill="#fdfaf3" />
+    <!-- Đầu cún & má trắng -->
+    <rect x="15" y="3" width="8" height="8" fill="#1e293b" />
+    <rect x="17" y="6" width="4" height="4" fill="#fdfaf3" />
+    <rect x="20" y="6" width="2" height="2" fill="#2d3748" /> <!-- Mũi -->
+    <rect x="18" y="4" width="1" height="1" fill="#1e293b" /> <!-- Mắt -->
+    <!-- Tai vểnh hình tam giác pixel -->
+    <rect x="16" y="1" width="2" height="2" fill="#1e293b" />
+    <rect x="20" y="1" width="2" height="2" fill="#1e293b" />
+    <!-- Khăn quàng cổ màu hoa dại hồng -->
+    <rect x="14" y="9" width="4" height="2" fill="#ea7692" />
+    <rect x="15" y="11" width="2" height="3" fill="#ea7692" />
+  </g>
+
+  <!-- 6. THẢM HOA DẠI MÙA HÈ NỞ RỘ ĐA SẮC (CRAFTPIX WILDFLOWER CLUSTERS) -->
+  <g id="craftpix-wildflowers">
+    <!-- Cụm hoa hồng cánh bướm dại (Pink Cosmos Clusters) -->
+    <!-- Cụm A (Bên trái) -->
+    <g transform="translate(18, 54)">
+      <!-- Cành xanh -->
+      <rect x="5" y="6" width="1" height="8" fill="#32633f" />
+      <rect x="12" y="8" width="1" height="7" fill="#32633f" />
+      <!-- Bông 1 -->
+      <rect x="4" y="3" width="3" height="3" fill="#ea7692" />
+      <rect x="5" y="4" width="1" height="1" fill="#fff59d" />
+      <!-- Bông 2 -->
+      <rect x="11" y="5" width="3" height="3" fill="#f49db2" />
+      <rect x="12" y="6" width="1" height="1" fill="#fff59d" />
+      <!-- Bông 3 -->
+      <rect x="8" y="1" width="3" height="3" fill="#ea7692" />
+      <rect x="9" y="2" width="1" height="1" fill="#fff59d" />
+    </g>
+
+    <!-- Cụm B (Quanh cún shiba) -->
+    <g transform="translate(170, 34)">
+      <rect x="3" y="4" width="1" height="6" fill="#32633f" />
+      <rect x="2" y="2" width="3" height="3" fill="#ea7692" />
+      <rect x="3" y="3" width="1" height="1" fill="#fff59d" />
+
+      <rect x="9" y="6" width="1" height="5" fill="#32633f" />
+      <rect x="8" y="4" width="3" height="3" fill="#f49db2" />
+      <rect x="9" y="5" width="1" height="1" fill="#fff59d" />
+
+      <rect x="15" y="3" width="1" height="7" fill="#32633f" />
+      <rect x="14" y="1" width="3" height="3" fill="#ea7692" />
+      <rect x="15" y="2" width="1" height="1" fill="#fff59d" />
+    </g>
+
+    <!-- Cụm hoa cúc vàng rực rỡ hè (Summer Dandelions & Marigolds) -->
+    <g transform="translate(54, 46)">
+      <rect x="4" y="4" width="1" height="6" fill="#32633f" />
+      <rect x="3" y="2" width="3" height="3" fill="#f7cb52" />
+      <rect x="4" y="3" width="1" height="1" fill="#ffffff" />
+
+      <rect x="10" y="6" width="1" height="5" fill="#32633f" />
+      <rect x="9" y="4" width="3" height="3" fill="#fde688" />
+      <rect x="10" y="5" width="1" height="1" fill="#ffffff" />
+    </g>
+
+    <!-- Cụm hoa cúc dại trắng tinh khôi (White Summer Daisies) -->
+    <g transform="translate(280, 36)">
+      <rect x="4" y="4" width="1" height="6" fill="#32633f" />
+      <rect x="3" y="2" width="3" height="3" fill="#ffffff" />
+      <rect x="4" y="3" width="1" height="1" fill="#f7cb52" />
+
+      <rect x="12" y="6" width="1" height="5" fill="#32633f" />
+      <rect x="11" y="4" width="3" height="3" fill="#ffffff" />
+      <rect x="12" y="5" width="1" height="1" fill="#f7cb52" />
+
+      <rect x="18" y="2" width="1" height="8" fill="#32633f" />
+      <rect x="17" y="0" width="3" height="3" fill="#ffffff" />
+      <rect x="18" y="1" width="1" height="1" fill="#f7cb52" />
+    </g>
+
+    <!-- Cụm hoa chuông xanh hè & oải hương dại (Bluebell & Lavender Accents) -->
+    <g transform="translate(460, 26)">
+      <rect x="4" y="4" width="1" height="7" fill="#32633f" />
+      <rect x="3" y="2" width="3" height="3" fill="#7daae8" />
+      <rect x="4" y="3" width="1" height="1" fill="#ffffff" />
+
+      <rect x="10" y="6" width="1" height="5" fill="#32633f" />
+      <rect x="9" y="4" width="3" height="3" fill="#a493de" />
+
+      <rect x="16" y="3" width="1" height="8" fill="#32633f" />
+      <rect x="15" y="1" width="3" height="3" fill="#7daae8" />
+    </g>
+
+    <!-- Hàng hoa dại trải dài chân trang tiền cảnh (Foreground Flower Carpet) -->
+    <g transform="translate(0, 90)">
+      <!-- Điểm hoa rải rác -->
+      <rect x="22" y="8" width="2" height="2" fill="#ea7692" />
+      <rect x="48" y="14" width="2" height="2" fill="#f7cb52" />
+      <rect x="76" y="6" width="2" height="2" fill="#ffffff" />
+      <rect x="112" y="16" width="2" height="2" fill="#f49db2" />
+      <rect x="148" y="10" width="2" height="2" fill="#7daae8" />
+      <rect x="194" y="12" width="2" height="2" fill="#ea7692" />
+      <rect x="240" y="18" width="2" height="2" fill="#f7cb52" />
+      <rect x="286" y="8" width="2" height="2" fill="#ffffff" />
+      <rect x="330" y="14" width="2" height="2" fill="#f49db2" />
+      <rect x="382" y="10" width="2" height="2" fill="#ea7692" />
+      <rect x="430" y="16" width="2" height="2" fill="#7daae8" />
+      <rect x="478" y="8" width="2" height="2" fill="#f7cb52" />
+      <rect x="524" y="12" width="2" height="2" fill="#ffffff" />
+      <rect x="556" y="18" width="2" height="2" fill="#ea7692" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,232 @@
+/* ==========================================================================
+   MOBILE & RESPONSIVE OPTIMIZATIONS (HANDCRAFTED PIXEL ENVIRONMENT)
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  /* Safe area padding cho iPhone notch & home indicator */
+  .app-container {
+    padding-top: max(8px, env(safe-area-inset-top));
+    padding-bottom: max(110px, env(safe-area-inset-bottom));
+  }
+
+  .content-wrapper {
+    padding: 12px 12px;
+    gap: 22px;
+  }
+
+  /* Cụm mây khổng lồ mùa hè co tỉ lệ vừa vặn màn hình điện thoại */
+  .layer-giant-cloud {
+    transform: translateX(-48%) scale(0.72);
+    top: 1%;
+    width: 520px;
+    height: 320px;
+  }
+
+  /* Dãy núi xa và triền đồi cỏ hoa dại trên mobile */
+  .layer-distant-mountains {
+    bottom: 70px;
+    height: 180px;
+  }
+
+  .layer-meadow-hills {
+    height: 120px;
+  }
+  .hill-main-svg-wrapper {
+    height: 75px;
+  }
+  .pixel-rustic-fence {
+    right: 4%;
+    transform: scale(0.85);
+    top: 6px;
+  }
+
+  /* Lớp tiền cảnh góc */
+  .layer-foreground-corners {
+    height: 60px;
+  }
+  .fg-grass-corner {
+    transform: scale(0.8);
+  }
+  .fg-right {
+    transform: scale(0.8) scaleX(-1);
+  }
+
+  /* Màn hình 1 — Lời mời */
+  .pixel-invitation-container {
+    min-height: 70vh;
+    padding: 16px 4px;
+  }
+
+  .pixel-invitation-title {
+    font-size: 1.75rem;
+    line-height: 1.35;
+    margin-bottom: 12px;
+  }
+
+  .pixel-dialog-box {
+    padding: 13px 15px;
+    margin-bottom: 22px;
+  }
+
+  .pixel-dialog-text {
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  .pixel-giftbox-wrapper {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 24px;
+  }
+
+  .btn-pixel-primary {
+    width: 100%;
+    max-width: 300px;
+    padding: 13px 18px;
+    font-size: 0.98rem;
+  }
+
+  /* Thiệp chúc mừng sinh nhật */
+  .pixel-wish-card {
+    padding: 22px 14px 18px 14px;
+  }
+
+  .pixel-stamp {
+    top: 10px;
+    right: 10px;
+    width: 42px;
+    height: 50px;
+  }
+
+  .pixel-wish-heading {
+    font-size: 1.55rem;
+    line-height: 1.35;
+  }
+
+  .pixel-handwritten-greeting {
+    font-size: 1.35rem;
+  }
+
+  .pixel-body-paragraph {
+    font-size: 0.94rem;
+    line-height: 1.68;
+  }
+
+  .pixel-signature {
+    font-size: 1.25rem;
+  }
+
+  /* Polaroid Scrapbook */
+  .pixel-scrapbook-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .pixel-polaroid-frame {
+    padding: 7px 7px 11px 7px;
+  }
+
+  .pixel-polaroid-caption {
+    font-size: 1.02rem;
+    margin-top: 4px;
+  }
+
+  .pixel-tag-pill {
+    font-size: 0.62rem;
+  }
+
+  .pixel-tape-corner {
+    width: 46px;
+    height: 13px;
+    top: -7px;
+  }
+
+  /* Bánh sinh nhật */
+  .pixel-cake-card {
+    padding: 22px 12px;
+  }
+
+  .pixel-cake-stage {
+    width: 165px;
+    height: 135px;
+  }
+
+  .pixel-cake-tier-top {
+    width: 90px;
+    height: 36px;
+  }
+
+  .pixel-cake-tier-bottom {
+    width: 128px;
+    height: 40px;
+  }
+
+  .pixel-cake-plate {
+    width: 155px;
+  }
+
+  /* Lá thư cuối */
+  .pixel-letter-card {
+    padding: 22px 14px 18px 14px;
+  }
+
+  .pixel-letter-title {
+    font-size: 1.55rem;
+    line-height: 1.35;
+  }
+
+  .pixel-letter-p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  /* Lightbox */
+  .pixel-lightbox-modal {
+    padding: 9px 9px 13px 9px;
+    max-width: 92vw;
+  }
+
+  .pixel-nav-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .pixel-nav-prev { left: 4px; }
+  .pixel-nav-next { right: 4px; }
+
+  .pixel-lightbox-title {
+    font-size: 1rem;
+  }
+
+  .pixel-lightbox-desc {
+    font-size: 0.82rem;
+  }
+
+  /* Floating Music Player trên mobile */
+  .pixel-music-player {
+    bottom: max(14px, env(safe-area-inset-bottom));
+    right: 12px;
+    padding: 6px 10px 6px 8px;
+  }
+
+  .pixel-cassette-icon {
+    width: 26px;
+    height: 18px;
+  }
+
+  .pixel-player-title {
+    font-size: 0.68rem;
+  }
+}
+
+/* Màn hình siêu nhỏ (< 360px) */
+@media (max-width: 360px) {
+  .pixel-scrapbook-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .pixel-invitation-title {
+    font-size: 1.55rem;
+  }
+}

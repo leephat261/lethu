@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b72b0" />
+      <stop offset="25%" stop-color="#558cc9" />
+      <stop offset="55%" stop-color="#7eafd9" />
+      <stop offset="80%" stop-color="#add2ed" />
+      <stop offset="100%" stop-color="#d3e7f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Bầu trời xanh dịu có chiều sâu khí quyển -->
+  <rect width="1200" height="600" fill="url(#skyGrad)" />
+
+  <!-- Pixel Dithering ở các dải chuyển sắc bầu trời -->
+  <g fill="#4e84c1" opacity="0.6">
+    <rect x="0" y="140" width="1200" height="4" />
+    <rect x="0" y="148" width="1200" height="2" />
+    <rect x="0" y="154" width="1200" height="1" />
+  </g>
+  <g fill="#6e9fce" opacity="0.5">
+    <rect x="0" y="270" width="1200" height="4" />
+    <rect x="0" y="278" width="1200" height="2" />
+  </g>
+
+  <!-- Dãy núi xa tầng 1 (Mù sương nhạt nhất - Atmospheric Perspective) -->
+  <path d="M0,420 L60,380 L140,410 L240,360 L360,405 L480,345 L620,390 L760,350 L880,400 L1000,365 L1120,395 L1200,380 L1200,600 L0,600 Z" fill="#9dbbd8" opacity="0.6" />
+
+  <!-- Dãy núi xa tầng 2 (Sắc nét hơn, có khối bóng bên phải) -->
+  <path d="M0,450 L100,390 L200,430 L320,375 L440,415 L560,365 L680,410 L800,370 L940,420 L1060,380 L1200,410 L1200,600 L0,600 Z" fill="#7a9ebf" opacity="0.75" />
+
+  <!-- Mảng núi đón nắng nhẹ từ bên trái -->
+  <path d="M100,390 L200,430 L100,430 Z M320,375 L440,415 L320,415 Z M560,365 L680,410 L560,410 Z M800,370 L940,420 L800,420 Z" fill="#92b2d1" opacity="0.5" />
+
+  <!-- Dãy núi trung cảnh tầng 3 (Sẫm màu hơn, tạo chiều sâu vững chắc) -->
+  <path d="M0,480 L140,430 L260,470 L380,420 L500,455 L640,410 L780,450 L900,415 L1040,460 L1160,425 L1200,440 L1200,600 L0,600 Z" fill="#6286a8" opacity="0.85" />
+</svg>

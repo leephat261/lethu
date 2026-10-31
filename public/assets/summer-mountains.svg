@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 324" width="576" height="324" shape-rendering="crispEdges">
+  <!-- =========================================================================
+       PHƯƠNG ÁN 1: SUMMER PIXEL ART BACKGROUND — LAYER 3: DISTANT MOUNTAINS
+       Resolution: 576 x 324 px | Atmospheric Perspective (3 Depth Tiers)
+       ========================================================================= -->
+
+  <!-- TẦNG 1: DÃY NÚI XA NHẤT (MÙ SƯƠNG, XANH LAM NHẠT - ATMOSPHERIC HAZE) -->
+  <g id="far-misty-peaks" opacity="0.65">
+    <!-- Đường đỉnh núi nhấp nhô pixel (step = 2px) -->
+    <path d="
+      M0,230 
+      L28,212 L64,228 L112,198 L160,224 L214,188 L272,218 
+      L330,182 L388,220 L444,194 L500,222 L548,206 L576,218
+      L576,324 L0,324 Z"
+      fill="#a0bedc"
+    />
+  </g>
+
+  <!-- TẦNG 2: DÃY NÚI TRUNG CẢNH (RÕ NÉT HƠN, CÓ SỐNG NÚI & ÁNH NẮNG CHIẾU) -->
+  <g id="mid-mountain-range">
+    <!-- Mặt núi khuất bóng (Bên phải) -->
+    <path d="
+      M0,248
+      L48,218 L104,242 L168,208 L232,246 L308,202 L380,244 
+      L452,212 L518,248 L576,226
+      L576,324 L0,324 Z"
+      fill="#6b8fae"
+    />
+
+    <!-- Mặt núi đón nắng mai (Sườn trái mỗi đỉnh núi - Sunlit Mountain Facets) -->
+    <!-- Đỉnh 1 -->
+    <polygon points="0,248 48,218 48,248 0,248" fill="#88acd0" />
+    <!-- Đỉnh 2 -->
+    <polygon points="104,242 168,208 168,248 104,242" fill="#88acd0" />
+    <!-- Đỉnh 3 (Đỉnh cao nhất trung tâm) -->
+    <polygon points="232,246 308,202 308,252 232,246" fill="#88acd0" />
+    <!-- Đỉnh 4 -->
+    <polygon points="380,244 452,212 452,252 380,244" fill="#88acd0" />
+    <!-- Đỉnh 5 -->
+    <polygon points="518,248 576,226 576,256 518,248" fill="#88acd0" />
+
+    <!-- Dải sương mù chân núi tầng 2 (Mist Band) -->
+    <rect x="0" y="246" width="576" height="4" fill="#bed6ec" opacity="0.4" />
+    <rect x="0" y="250" width="576" height="2" fill="#bed6ec" opacity="0.25" />
+  </g>
+
+  <!-- TẦNG 3: DÃY ĐỒI NÚI GẦN HƠN (TIỀN NÚI - DEEP SLATE FOOTHILLS) -->
+  <g id="near-foothills" opacity="0.9">
+    <path d="
+      M0,264 
+      L72,238 L146,260 L220,234 L298,258 L374,230 L450,256 L524,238 L576,252
+      L576,324 L0,324 Z"
+      fill="#527595"
+    />
+    <!-- Sườn đón nắng của đồi gần -->
+    <polygon points="0,264 72,238 72,264 0,264" fill="#698dae" />
+    <polygon points="146,260 220,234 220,262 146,260" fill="#698dae" />
+    <polygon points="298,258 374,230 374,262 298,258" fill="#698dae" />
+    <polygon points="450,256 524,238 524,264 450,256" fill="#698dae" />
+  </g>
+</svg>

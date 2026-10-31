@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" shape-rendering="crispEdges">
+  <!-- =========================================================================
+       TRIỀN ĐỒI CỎ XÔ THƠM & CÁNH ĐỒNG HOA DẠI HỒNG (SAGE MEADOW & WILDFLOWERS)
+       Lấy cảm hứng trực tiếp từ bức tranh tham khảo
+       ========================================================================= -->
+
+  <!-- Lớp đồi sau (Bóng râm đồi cỏ xa xanh sẫm) -->
+  <path d="M0,120 Q300,50 650,90 T1200,60 L1200,320 L0,320 Z" fill="#2d523b" />
+  <path d="M0,140 Q320,65 680,105 T1200,75 L1200,320 L0,320 Z" fill="#264732" />
+
+  <!-- Lớp đồi trung cảnh (Sage Green nhấp nhô) -->
+  <path d="M0,90 Q240,25 540,65 T1200,45 L1200,320 L0,320 Z" fill="#437351" />
+  <path d="M0,105 Q260,35 580,75 T1200,55 L1200,320 L0,320 Z" fill="#396345" />
+
+  <!-- Lớp đồi tiền cảnh chính (Mặt cỏ đón nắng ấm) -->
+  <path d="M0,70 Q320,15 700,55 T1200,30 L1200,320 L0,320 Z" fill="#4f805e" />
+
+  <!-- Mảng cỏ highlight đón nắng chiếu từ góc trên bên trái -->
+  <path d="M0,72 Q200,22 460,38 T900,35 L900,58 Q540,46 240,46 L0,92 Z" fill="#6ba07c" opacity="0.8" />
+  <path d="M50,68 Q180,26 340,32 L340,44 Q190,38 60,76 Z" fill="#8bc09b" opacity="0.6" />
+
+  <!-- =========================================================================
+       HÀNG RÀO GỖ MỘC MẠC PIXEL (RUSTIC COUNTRY FENCE)
+       ========================================================================= -->
+  <g id="wooden-fence" transform="translate(680, 20)">
+    <!-- Cọc gỗ 1 -->
+    <rect x="10" y="8" width="6" height="26" fill="#6b5443" />
+    <rect x="10" y="6" width="6" height="3" fill="#8a705c" />
+    <!-- Cọc gỗ 2 -->
+    <rect x="42" y="12" width="6" height="25" fill="#6b5443" />
+    <rect x="42" y="10" width="6" height="3" fill="#8a705c" />
+    <!-- Cọc gỗ 3 -->
+    <rect x="74" y="16" width="6" height="24" fill="#6b5443" />
+    <rect x="74" y="14" width="6" height="3" fill="#8a705c" />
+    <!-- Cọc gỗ 4 -->
+    <rect x="106" y="20" width="6" height="23" fill="#6b5443" />
+    <rect x="106" y="18" width="6" height="3" fill="#8a705c" />
+
+    <!-- Thanh ngang hàng rào -->
+    <rect x="6" y="14" width="112" height="4" fill="#584435" />
+    <rect x="6" y="13" width="112" height="1" fill="#8a705c" />
+    <rect x="6" y="22" width="112" height="4" fill="#584435" />
+    <rect x="6" y="21" width="112" height="1" fill="#8a705c" />
+  </g>
+
+  <!-- =========================================================================
+       CHÚ CÚN SHIBA NHỎ PIXEL ĐỨNG BÊN TRIỀN HOA (PET COMPANION ASSET)
+       ========================================================================= -->
+  <g id="pixel-shiba" transform="translate(560, 32)">
+    <!-- Thân chú cún màu đen sẫm -->
+    <rect x="8" y="12" width="16" height="16" fill="#1e293b" />
+    <!-- Chân trước & chân sau -->
+    <rect x="8" y="26" width="3" height="8" fill="#1e293b" />
+    <rect x="13" y="26" width="3" height="8" fill="#1e293b" />
+    <rect x="18" y="26" width="3" height="8" fill="#1e293b" />
+    <rect x="22" y="26" width="3" height="8" fill="#1e293b" />
+    <!-- Đuôi cuộn cong -->
+    <rect x="4" y="10" width="4" height="6" fill="#1e293b" />
+    <rect x="2" y="8" width="4" height="4" fill="#1e293b" />
+    <!-- Đầu & tai dựng -->
+    <rect x="18" y="4" width="10" height="10" fill="#1e293b" />
+    <rect x="20" y="1" width="3" height="4" fill="#1e293b" />
+    <rect x="25" y="1" width="3" height="4" fill="#1e293b" />
+    <!-- Mõm & đốm trắng ngực shiba -->
+    <rect x="26" y="7" width="4" height="4" fill="#f8fafc" />
+    <rect x="28" y="8" width="2" height="2" fill="#0f172a" />
+    <rect x="18" y="14" width="5" height="8" fill="#f8fafc" />
+    <!-- Mắt tròn nhỏ -->
+    <rect x="23" y="6" width="2" height="2" fill="#ffffff" />
+  </g>
+
+  <!-- =========================================================================
+       THẢM HOA CÁNH BƯỚM DẠI MÀU HỒNG PIXEL NỞ RỘ KHẮP TRIỀN ĐỒI
+       ========================================================================= -->
+  <g id="wildflowers" fill="#d9758f">
+    <!-- Cụm hoa 1 -->
+    <rect x="30" y="80" width="8" height="8" />
+    <rect x="32" y="82" width="4" height="4" fill="#facc15" />
+    <rect x="33" y="88" width="2" height="12" fill="#2d523b" />
+
+    <rect x="75" y="65" width="9" height="9" />
+    <rect x="77" y="67" width="5" height="5" fill="#facc15" />
+    <rect x="78" y="74" width="2" height="14" fill="#2d523b" />
+
+    <rect x="130" y="85" width="8" height="8" fill="#e89eb0" />
+    <rect x="132" y="87" width="4" height="4" fill="#facc15" />
+    <rect x="133" y="93" width="2" height="10" fill="#2d523b" />
+
+    <rect x="190" y="55" width="10" height="10" />
+    <rect x="192" y="57" width="6" height="6" fill="#facc15" />
+    <rect x="194" y="65" width="2" height="16" fill="#2d523b" />
+
+    <rect x="250" y="75" width="8" height="8" fill="#e89eb0" />
+    <rect x="252" y="77" width="4" height="4" fill="#facc15" />
+    <rect x="253" y="83" width="2" height="12" fill="#2d523b" />
+
+    <rect x="310" y="60" width="10" height="10" />
+    <rect x="312" y="62" width="6" height="6" fill="#facc15" />
+    <rect x="314" y="70" width="2" height="15" fill="#2d523b" />
+
+    <rect x="380" y="78" width="8" height="8" fill="#b04e67" />
+    <rect x="382" y="80" width="4" height="4" fill="#facc15" />
+    <rect x="383" y="86" width="2" height="14" fill="#2d523b" />
+
+    <rect x="450" y="65" width="9" height="9" />
+    <rect x="452" y="67" width="5" height="5" fill="#facc15" />
+    <rect x="453" y="74" width="2" height="15" fill="#2d523b" />
+
+    <rect x="520" y="70" width="8" height="8" fill="#e89eb0" />
+    <rect x="522" y="72" width="4" height="4" fill="#facc15" />
+    <rect x="523" y="78" width="2" height="12" fill="#2d523b" />
+
+    <rect x="610" y="68" width="9" height="9" />
+    <rect x="612" y="70" width="5" height="5" fill="#facc15" />
+    <rect x="613" y="77" width="2" height="14" fill="#2d523b" />
+
+    <rect x="670" y="82" width="8" height="8" fill="#b04e67" />
+    <rect x="672" y="84" width="4" height="4" fill="#facc15" />
+    <rect x="673" y="90" width="2" height="12" fill="#2d523b" />
+
+    <rect x="740" y="62" width="10" height="10" />
+    <rect x="742" y="64" width="6" height="6" fill="#facc15" />
+    <rect x="744" y="72" width="2" height="16" fill="#2d523b" />
+
+    <rect x="810" y="75" width="8" height="8" fill="#e89eb0" />
+    <rect x="812" y="77" width="4" height="4" fill="#facc15" />
+    <rect x="813" y="83" width="2" height="12" fill="#2d523b" />
+
+    <rect x="880" y="58" width="10" height="10" />
+    <rect x="882" y="60" width="6" height="6" fill="#facc15" />
+    <rect x="884" y="68" width="2" height="16" fill="#2d523b" />
+
+    <rect x="950" y="72" width="9" height="9" fill="#b04e67" />
+    <rect x="952" y="74" width="5" height="5" fill="#facc15" />
+    <rect x="953" y="81" width="2" height="14" fill="#2d523b" />
+
+    <rect x="1020" y="64" width="8" height="8" fill="#e89eb0" />
+    <rect x="1022" y="66" width="4" height="4" fill="#facc15" />
+    <rect x="1023" y="72" width="2" height="12" fill="#2d523b" />
+
+    <rect x="1100" y="55" width="10" height="10" />
+    <rect x="1102" y="57" width="6" height="6" fill="#facc15" />
+    <rect x="1104" y="65" width="2" height="16" fill="#2d523b" />
+
+    <rect x="1160" y="70" width="8" height="8" fill="#e89eb0" />
+    <rect x="1162" y="72" width="4" height="4" fill="#facc15" />
+    <rect x="1163" y="78" width="2" height="12" fill="#2d523b" />
+  </g>
+</svg>

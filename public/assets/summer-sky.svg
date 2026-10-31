@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 324" width="576" height="324" shape-rendering="crispEdges">
+  <!-- =========================================================================
+       PHƯƠNG ÁN 1: SUMMER PIXEL ART BACKGROUND — LAYER 1: SKY (CRAFTPIX STYLE)
+       Resolution: 576 x 324 px | Palette: Summer Azure & Horizon Sunlit Haze
+       ========================================================================= -->
+  <defs>
+    <linearGradient id="craftpixSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b76b8" />
+      <stop offset="22%" stop-color="#5291d2" />
+      <stop offset="48%" stop-color="#72abee" />
+      <stop offset="72%" stop-color="#99c6f5" />
+      <stop offset="90%" stop-color="#c4e2fc" />
+      <stop offset="100%" stop-color="#e3f2fd" />
+    </linearGradient>
+  </defs>
+
+  <!-- Nền trời hè xanh trong -->
+  <rect width="576" height="324" fill="url(#craftpixSky)" />
+
+  <!-- Dải Pixel Dithering tầng 1 (3b76b8 -> 5291d2) -->
+  <g fill="#33669f" opacity="0.45">
+    <rect x="0" y="64" width="576" height="2" />
+    <rect x="0" y="68" width="576" height="1" />
+    <rect x="0" y="71" width="576" height="1" />
+  </g>
+
+  <!-- Dải Pixel Dithering tầng 2 (5291d2 -> 72abee) -->
+  <g fill="#4a84c2" opacity="0.4">
+    <rect x="0" y="140" width="576" height="2" />
+    <rect x="0" y="144" width="576" height="1" />
+    <rect x="0" y="147" width="576" height="1" />
+  </g>
+
+  <!-- Dải Pixel Dithering chân trời (72abee -> 99c6f5) -->
+  <g fill="#6a9fd6" opacity="0.35">
+    <rect x="0" y="210" width="576" height="2" />
+    <rect x="0" y="214" width="576" height="1" />
+  </g>
+
+  <!-- Những đám mây mỏng viền chân trời (Far horizon wisps) -->
+  <g fill="#ffffff" opacity="0.3">
+    <rect x="24" y="238" width="84" height="2" />
+    <rect x="36" y="236" width="60" height="2" />
+    <rect x="180" y="244" width="112" height="2" />
+    <rect x="196" y="242" width="76" height="2" />
+    <rect x="380" y="232" width="130" height="2" />
+    <rect x="410" y="230" width="72" height="2" />
+  </g>
+</svg>
